@@ -1,2 +1,2 @@
 # angularjs - Single Page Application
-view live here - https://hiteshbhargav.github.io/angularjs-spa/
+view live here - https://angularjs-spa.vercel.app/
