@@ -30,7 +30,7 @@ myApp.controller("shopController", function ($scope) {
     },
     {
       id: 4,
-      img: "../images/products/logitech/k380.png",
+      img: "../images/products/logitech/K380.png",
       name: "K380 Keyboard",
       price: 3195,
       brand: "logitech",
