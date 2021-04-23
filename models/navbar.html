@@ -1,24 +1,34 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fs-5 py-4 px-5">
   <div class="container-fluid">
-    <a class="navbar-brand fw-bolder" href="#!home">Shop</a>
+    <a class="navbar-brand fw-bold fs-3" href="#">Shop</a>
     <button
       class="navbar-toggler"
       type="button"
       data-bs-toggle="collapse"
-      data-bs-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#!home">Home</a>
-        <a class="nav-link" href="#!features">Features</a>
-        <a class="nav-link" href="#!shop" tabindex="-1">Shop</a>
-        <a class="nav-link" href="#!contact">Contact</a>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#!home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!product">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!contact" tabindex="-1">Contact</a>
+        </li>
+      </ul>
+      <button class="btn" type="submit">
+        <a class="text-dark fs-5" href="#!login" alt="account"
+          ><i class="fas fa-user-alt"></i
+        ></a>
+      </button>
     </div>
   </div>
 </nav>

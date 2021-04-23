@@ -1,3 +1,8 @@
-<div ng-controller="homeController" class="home" style="height: 90vh">
-  <h2>Home Page</h2>
+<div ng-controller="homeController" class="home">
+  <div ng-include="'../models/carousel.html'"></div>
+  <div
+    ng-include="'../models/trending.html'"
+    ng-controller="shopController"
+  ></div>
+  <div ng-include="'../models/features.html'"></div>
 </div>

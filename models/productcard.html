@@ -1,5 +1,5 @@
-<div class="shop" ng-repeat="product in products" ng-controller="shop">
-  <div class="products">
+<div class="shop" ng-repeat="product in product|filter:search">
+  <div class="product">
     <div class="card my-3" style="width: 18rem" key="{{product.id}}">
       <div class="img-parent p-3">
         <img

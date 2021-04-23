@@ -1,0 +1,34 @@
+<div class="trending container my-5">
+  <p class="fs-1 fw-bold text-center">Trending</p>
+  <div class="trending-main d-flex flex-wrap justify-content-between">
+    <div
+      class="shop mx-auto"
+      ng-repeat="product in product"
+      ng-show="product.trending"
+    >
+      <div class="product">
+        <div class="card my-3" style="width: 18rem" key="{{product.id}}">
+          <div class="img-parent p-3">
+            <img
+              src="{{product.img}}"
+              class="d-block w-100"
+              alt="{{product.name}}"
+            />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{product.name}}</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-outline text-secondary"
+              >₹{{product.price}}</a
+            >
+            <br />
+            <a href="#!shop" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

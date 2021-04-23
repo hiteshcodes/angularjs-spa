@@ -6,17 +6,21 @@ myApp.config([
         templateUrl: "../views/home.html",
         controller: "homeController",
       })
-      .when("/features", {
-        templateUrl: "../views/features.html",
-        controller: "",
-      })
-      .when("/pricing", {
-        templateUrl: "../views/pricing.html",
-        controller: "",
-      })
-      .when("/shop", {
+      .when("/product", {
         templateUrl: "../views/shop.html",
-        controller: "shop",
+        controller: "shopController",
+      })
+      .when("/contact", {
+        templateUrl: "../views/contact.html",
+        controller: "contactController",
+      })
+      .when("/login", {
+        templateUrl: "../views/login.html",
+        controller: "loginController",
+      })
+      .when("/register", {
+        templateUrl: "../views/register.html",
+        controller: "registerController",
       })
 
       .otherwise({ redirectTo: "/" });

@@ -1,6 +1,6 @@
-myApp.controller("shop", function ($scope) {
-  $scope.heading = "Proucts list";
-  $scope.products = [
+myApp.controller("shopController", function ($scope) {
+  $scope.heading = "products";
+  $scope.product = [
     {
       id: 1,
       img: "../images/products/logitech/ergo.webp",
@@ -8,6 +8,7 @@ myApp.controller("shop", function ($scope) {
       price: 3995,
       brand: "logitech",
       category: "mouse",
+      trending: false,
     },
     {
       id: 2,
@@ -16,6 +17,7 @@ myApp.controller("shop", function ($scope) {
       price: 9495,
       brand: "logitech",
       category: "mouse",
+      trending: false,
     },
     {
       id: 3,
@@ -24,6 +26,7 @@ myApp.controller("shop", function ($scope) {
       price: 7995,
       brand: "logitech",
       category: "mouse",
+      trending: true,
     },
     {
       id: 4,
@@ -32,6 +35,7 @@ myApp.controller("shop", function ($scope) {
       price: 3195,
       brand: "logitech",
       category: "keyboard",
+      trending: false,
     },
     {
       id: 5,
@@ -40,6 +44,7 @@ myApp.controller("shop", function ($scope) {
       price: 12995,
       brand: "logitech",
       category: "keyboard",
+      trending: true,
     },
     {
       id: 6,
@@ -48,6 +53,7 @@ myApp.controller("shop", function ($scope) {
       price: 3295,
       brand: "logitech",
       category: "keyboard",
+      trending: false,
     },
     {
       id: 7,
@@ -56,6 +62,7 @@ myApp.controller("shop", function ($scope) {
       price: 6439,
       brand: "hyperx",
       category: "headphone",
+      trending: true,
     },
     {
       id: 8,
@@ -64,6 +71,7 @@ myApp.controller("shop", function ($scope) {
       price: 3490,
       brand: "hyperx",
       category: "headphone",
+      trending: false,
     },
     {
       id: 9,
@@ -72,6 +80,7 @@ myApp.controller("shop", function ($scope) {
       price: 5243,
       brand: "hyperx",
       category: "headphone",
+      trending: false,
     },
   ];
 });

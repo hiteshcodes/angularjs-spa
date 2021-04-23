@@ -1,6 +1,20 @@
-<h1 class="text-center my-5">{{heading}}</h1>
-<div
-  class="shop-main container d-flex justify-content-around flex-wrap m-auto"
-  style="width: 70%"
-  ng-include="'../models/productcard.html'"
-></div>
+<div class="shop-main">
+  <div class="container" style="width: 70%" ng-controller="shopController">
+    <div class="actions row d-flex justify-content-between mt-2 mb-4">
+      <p class="my-auto text-muted fs-2 py-3">{{heading}}</p>
+      <div class="filter my-auto">
+        <input
+          class="form-control me-4"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+          ng-model="search"
+        />
+      </div>
+    </div>
+    <div
+      class="product-list d-flex justify-content-between flex-wrap m-auto"
+      ng-include="'../models/productcard.html'"
+    ></div>
+  </div>
+</div>
